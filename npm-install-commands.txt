@@ -1,0 +1,15 @@
+npm i -D webpack webpack-cli
+
+//for css
+npm i -D css-loader mini-css-extract-plugin
+
+//for html
+npm i -D html-webpack-plugin
+
+npm install copy-webpack-plugin --save-dev
+
+npm i bootstrap jquery popper.js
+
+npm i -D webpack-dev-server
+
+

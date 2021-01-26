@@ -1,37 +1,27 @@
-
-
 function createItem(id, name, price, img) {
     return {id, name, price, img};
 };
 
 function initCatalog(qty) {
-    //let ids = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-    //let names = ["MANGO PEOPLE T-SHIRT", "MANGO PEOPLE T-SHIRT", "MANGO //PEOPLE T-SHIRT", "MANGO PEOPLE T-SHIRT", "MANGO PEOPLE T-SHIRT",
-    //    "MANGO PEOPLE T-SHIRT", "MANGO PEOPLE T-SHIRT", "MANGO PEOPLE T-// SHIRT", "MANGO PEOPLE T-SHIRT"];
-
-    // let prices = ["52.00", "62.00", "72.00", "82.00", "52.00", "62.00", "72.00", "82.00", "72.00"];
-
-    
     let ids = [];
     let names = [];
     let imgs = [];
     let prices = [];
 
-    for (let i=0; i<=qty-1; i++) {
+    for (let i = 1; i <= qty; i++) {
         ids.push(i);
         names.push("MANGO PEOPLE T-SHIRT");
-        prices.push("1" + String(i)+".00");
-        imgs.push("../src/assets/imgs/Product"+String(i+1)+ ".jpg");
-    } 
+        prices.push("1" + String(i) + ".00");
+        imgs.push(`https://raw.githubusercontent.com/evsik/static/master/SHOP(IMGS)/Fetured${i}.jpg`);
+    }
 
     return names.map((names, index) => createItem(ids[index], names, prices[index], imgs[index]));
-};
+}
 
-const catalog = {
+export default {
     items: [],
     container: null,
     basket: basket,
-
 
     init(qty) {
         this.items = initCatalog(qty);
@@ -54,7 +44,6 @@ const catalog = {
         })
     },
     _render() {
-
         let str = "";
         this.items.forEach(item => {
             str += `
@@ -76,8 +65,6 @@ const catalog = {
                 </div>
             </div>
             `
-
-            
         })
         this.container.innerHTML = str;
     }

@@ -1,12 +1,10 @@
-
-var basket = {
+export default {
     items: [],
     container: null,
-    basket: basket,
     total: 0,
 
     init() {
-        this.container = document.querySelector("#Basket");
+        this.container = document.querySelector("#basket");
         this._render();
         this._handleActions();
     },
@@ -60,7 +58,7 @@ var basket = {
             this.total = this.total + Number(item.price);
         } else {
             find.amount++;
-            this.total = this.total + Number(find.price);            
+            this.total = this.total + Number(find.price);
         }
         this._render();
     },
@@ -79,4 +77,4 @@ var basket = {
     }
 }
 
-basket.init();
+// basket.init();
