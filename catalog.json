@@ -1,0 +1,26 @@
+[
+  {
+    "id_product": 123,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 1000,
+    "img": "https://raw.githubusercontent.com/evsik/static/master/SHOP(IMGS)/Fetured1.jpg"
+  },
+  {
+    "id_product": 456,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 1000,
+    "img": "https://raw.githubusercontent.com/evsik/static/master/SHOP(IMGS)/Fetured1.jpg"
+  },
+    {
+    "id_product": 71,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 1000,
+    "img": "https://raw.githubusercontent.com/evsik/static/master/SHOP(IMGS)/Fetured1.jpg"
+  },
+      {
+    "id_product": 188,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 1000,
+    "img": "https://raw.githubusercontent.com/evsik/static/master/SHOP(IMGS)/Fetured1.jpg"
+  }
+]
