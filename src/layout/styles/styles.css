@@ -328,6 +328,7 @@
 
 .label_cart_checkbox {
     /*outline: 1px solid red;*/
+    cursor: pointer;
     width: 39px;
     height: 32px;
     position: absolute;
@@ -356,7 +357,7 @@
   z-index: 2; } */
 .headerCart .headerCartWrap {
     position: absolute;
-    width: 260px;
+    width: 300px;
     left: -40px;
     display: none;
 }
@@ -384,7 +385,6 @@
 
 .headerCart .headerCartWrap .headerCartWrapInAll div {
     justify-content: space-between;
-    align-items: center;
 }
 
 .headerCart .headerCartWrap .headerCartWrapInAll div a:last-child {
@@ -942,27 +942,27 @@
 }
 
 /*-------------------------------OFFER End-----------------------------*/
-/*-------------------------------FETURED ST-----------------------------*/
-.feturedHeadTop {
+/*-------------------------------FEATURED ST-----------------------------*/
+.featuredHeadTop {
     color: #222222;
     font-size: 30px;
     font-weight: 700;
     line-height: 54px;
 }
 
-.feturedHeadBottom {
+.featuredHeadBottom {
     color: #9f9f9f;
     font-size: 14px;
     font-weight: 400;
 }
 
 @media (max-width: 400px) {
-    .feturedHeadBottom {
+    .featuredHeadBottom {
         padding: 0 2rem 0 2rem;
     }
 }
 
-.feturedButton {
+.featuredButton {
     background-color: #f16d7f;
     color: #ffffff;
     margin-top: 3rem;
@@ -970,16 +970,16 @@
     border-left: 1px solid #f16d7f;
 }
 
-.feturedButton i {
+.featuredButton i {
     padding-left: 0.5rem;
 }
 
-.feturedButton:hover {
+.featuredButton:hover {
     background-color: #ffffff;
     color: #f16d7f;
 }
 
-/*-------------------------------FETURED END-----------------------------*/
+/*-------------------------------FEATURED END-----------------------------*/
 /*-------------------------------OFFER FOR WOMEN ST-----------------------------*/
 .offerWomenLeft {
     background: url("https://raw.githubusercontent.com/evsik/static/master/SHOP(IMGS)/offerForWomen.jpg");
@@ -1269,12 +1269,12 @@ details[open] summary .fa-caret-up {
     }
 }
 
-.feturedItems {
+.featuredItems {
     padding-top: 2rem;
 }
 
 @media (max-width: 450px) {
-    .feturedItems {
+    .featuredItems {
         flex: 0 0 100%;
         max-width: 100%;
         margin-left: 0;
@@ -1283,27 +1283,27 @@ details[open] summary .fa-caret-up {
 }
 
 @media (min-width: 767.98px) {
-    .feturedItems {
+    .featuredItems {
         padding-top: 0;
     }
 }
 
 @media (min-width: 1199.98px) {
-    .feturedItem {
+    .featuredItem {
         margin-top: 2rem;
     }
 }
 
-.feturedItem:hover {
+.featuredItem:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
-.feturedItem .feturedImgWrap {
+.featuredItem .featuredImgWrap {
     height: 280px;
     position: relative;
 }
 
-.feturedItem .feturedImgWrap img {
+.featuredItem .featuredImgWrap img {
     width: 100%;
     display: block;
     height: inherit;
@@ -1312,13 +1312,13 @@ details[open] summary .fa-caret-up {
 }
 
 @media (max-width: 450px) {
-    .feturedItem .feturedImgWrap img {
+    .featuredItem .featuredImgWrap img {
         object-fit: contain;
         margin-top: 2rem;
     }
 }
 
-.feturedItem .feturedImgWrap .feturedBuy {
+.featuredItem .featuredImgWrap .featuredBuy {
     height: inherit;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -1326,8 +1326,9 @@ details[open] summary .fa-caret-up {
     position: absolute;
 }
 
-.feturedItem .feturedImgWrap .feturedBuy button {
-    padding: 15px;
+.featuredItem .featuredImgWrap .featuredBuy button {
+    height: 50px;
+    width: 150px;
     border: 1px solid #ffffff;
     background: none;
     color: white;
@@ -1337,17 +1338,28 @@ details[open] summary .fa-caret-up {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all ease-in-out .4s;
 }
 
-.feturedItem .feturedImgWrap .feturedBuy button div {
+.featuredItem .featuredImgWrap .featuredBuy button:hover {
+    background-color: #fafafa;
+    color: #2f2a2d;
+    border: 1px solid #2f2a2d;
+}
+
+.featuredItem .featuredImgWrap .featuredBuy button:focus {
+    opacity: 0.5;
+}
+
+.featuredItem .featuredImgWrap .featuredBuy button div {
     margin-right: 10px;
 }
 
-.feturedItem .feturedImgWrap .feturedBuy button i {
+.featuredItem .featuredImgWrap .featuredBuy button i {
     padding-right: 10px;
 }
 
-.feturedItem .feturedItemName {
+.featuredItem .featuredItemName {
     color: #222222;
     font-size: 13px;
     font-weight: 700;
@@ -1358,19 +1370,19 @@ details[open] summary .fa-caret-up {
 }
 
 @media (max-width: 768px) {
-    .feturedItem .feturedItemName {
+    .featuredItem .featuredItemName {
         font-size: 16px;
         padding-top: 0.4rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
-    .feturedItem .feturedItemName {
+    .featuredItem .featuredItemName {
         padding-top: 0;
     }
 }
 
-.feturedItem .feturedItemPrice {
+.featuredItem .featuredItemPrice {
     color: #f16d7f;
     font-size: 16px;
     font-weight: 700;
@@ -1379,7 +1391,7 @@ details[open] summary .fa-caret-up {
 }
 
 @media (max-width: 768px) {
-    .feturedItem .feturedItemPrice {
+    .featuredItem .featuredItemPrice {
         font-size: 16px;
         padding-left: 0;
         padding-top: 0.4rem;
@@ -1387,20 +1399,20 @@ details[open] summary .fa-caret-up {
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
-    .feturedItem .feturedItemPrice {
+    .featuredItem .featuredItemPrice {
         padding-top: 0.2rem;
     }
 }
 
 @media (min-width: 768px) {
-    .feturedItem:hover .feturedBuy {
+    .featuredItem:hover .featuredBuy {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
 
-.feturedBuySm button {
+.featuredBuySm button {
     border-radius: 3px;
     border: 1px solid #ef5b70;
     background-color: #ffffff;
@@ -1411,7 +1423,7 @@ details[open] summary .fa-caret-up {
     padding: 0.5rem;
 }
 
-.feturedBuySm button:hover {
+.featuredBuySm button:hover {
     background-color: #f16d7f;
     color: #ffffff;
 }
@@ -2092,6 +2104,74 @@ body {
 .newArrivalsPath a:last-child {
     font-weight: 700;
     color: #f16d7f;
+}
+
+/*
+New style fot cart item
+*/
+
+.b-item_cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-item__img_cart {
+    align-self: flex-start;
+    margin-right: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.b-item__desc_cart {
+    max-width: 150px;
+}
+
+.b-item__name_cart {
+    margin: 0 0 5px 0;
+}
+
+.b-item__price_cart {
+    color: #474747;
+    font-size: 0.6em;
+}
+
+.b-item__quantity_cart {
+    margin-top: 15px;
+    font-size: 0.75em;
+}
+
+.b-item__delete_cart {
+    margin-top: 5px;
+    background-color: #2f2a2d;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    color: #fafafa;
+    border-radius: 5px;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+}
+
+.b-item__delete_cart:hover {
+    background-color: #fafafa;
+    color: #2f2a2d;
+    border: 1px solid #2f2a2d;
+}
+
+.buy-btn {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    transition: all ease-in-out .4s;
+}
+
+.buy-btn:hover {
+    background-color: #fafafa;
+    color: #2f2a2d;
+    border: 1px solid #2f2a2d;
 }
 
 /*-------------------------------NEW ARRIVAL END-----------------------------*/

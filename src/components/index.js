@@ -1,8 +1,7 @@
 import basket from "./js/basket";
-import catalog from "./js/catalog";
+import Catalog from "./js/catalog";
 
 export default () => {
     basket.init()
-    catalog.init(9)
+    let catalog = new Catalog('#catalog', basket, 'https://raw.githubusercontent.com/evsik/shop-ver.2/master/catalog.json')
 }
-

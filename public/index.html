@@ -76,17 +76,29 @@
 
             <div class="headerCart pr-4">
                 <label for="cart_checkbox" class="label_cart_checkbox"></label>
-                <a href="#"><img src="../src/assets/imgs/cart.png" alt="headerCart"></a>
+                <a href="#">
+                    <img src="../src/assets/imgs/cart.png" alt="headerCart">
+                </a>
                 <input type="checkbox" id="cart_checkbox">
                 <div class="headerCartWrap">
                     <div class="headerCartWrapBlock"></div>
                     <div class="headerCartWrapInAll">
-                        <div id="basket" class="d-flex flex-column"></div>
+                        <div id="basket" class="d-flex flex-column">
+                            <div class="d-flex flex-row justify-content-between">
+                                <b class="d-block">Общая стоимость: </b> <span class="d-block" id="tot-sum">  </span>
+                            </div>
+                            <hr>
+                            <div class="cart-block__items">
+
+                            </div>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between">
+                                <b class="d-block">Количество: </b> <span class="d-block" id="tot-qua">  </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
-
 
             <div class="dropdown">
                 <button class="btn-lg btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
@@ -563,25 +575,25 @@
         </div>
     </div>
     <!-------------------------------OFFER END----------------------------->
-    <!-------------------------------FETURED ST----------------------------->
+    <!-------------------------------FEATURED ST----------------------------->
     <div class="container">
         <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
             <a href="#">
-                <div class="feturedHeadTop">Fetured Items</div>
+                <div class="featuredHeadTop">Featured Items</div>
             </a>
             <a href="#">
-                <div class="feturedHeadBottom">Shop for items based on what we featured in this week</div>
+                <div class="featuredHeadBottom">Shop for items based on what we featured in this week</div>
             </a>
         </div>
         <div class="row" id="catalog"></div>
 
         <div class="container px-0 d-flex justify-content-around">
-            <button type="button" class="btn btn-outline-secondary feturedButton">
+            <button type="button" class="btn btn-outline-secondary featuredButton">
                 Browse All Product<i class="fas fa-long-arrow-alt-right"></i>
             </button>
         </div>
 
-        <!-------------------------------FETURED END----------------------------->
+        <!-------------------------------FEATURED END----------------------------->
         <!-------------------------------OFFER FOR WOMEN ST----------------------------->
 
         <div class="container mt-5">
